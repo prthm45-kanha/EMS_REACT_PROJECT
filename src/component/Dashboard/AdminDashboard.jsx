@@ -1,46 +1,16 @@
 import React from 'react';
 import Header from '../Others/Header';
+import CreateTask from '../Others/CreateTask';
+import AllTask from '../Others/AllTask';
 
 const AdminDashboard = () => {
   return (
     <div className='p-10 h-screen w-full'>
       <Header/>
+      <CreateTask/>
+      <AllTask/>
 
-      <div className='text-white bg-[#1C1C1C] mt-7 rounded p-6'>
-        <form className='flex items-start justify-between flex-wrap text-white'>
-     
-        <div className='w-1/2 '>
-        <div>
-            <h3 className='text-sm mb-1'>Task Title</h3>
-            <input className=' text-sm py-1 px-3 w-4/5 border-[1px] border-emerald-500 rounded outline-none bg-transparent ' type='text' placeholder='Make a UI design'/>
-        </div>
-
-        <div>
-           <h3 className='text-sm mb-1 mt-2'>Category</h3>
-           <input  className=' text-sm py-1 px-3 w-4/5 border-[1px] border-emerald-500 rounded outline-none bg-transparent '  type='text' placeholder='design,dev,etc'/>
-        </div>
-
-        <div>
-            <h3 className='text-sm mb-1 mt-2'>Date</h3>
-            <input  className=' text-sm py-1 px-3 w-4/5 border-[1px] border-emerald-500 rounded outline-none bg-transparent ' type='date'/>
-        </div>
-
-        <div>
-            <h3 className='text-sm mb-1 mt-2'>Assign to</h3>
-             <input  className=' text-sm py-1 px-3 w-4/5 border-[1px] border-emerald-500 rounded outline-none bg-transparent ' type='text' placeholder='employe name'/>
-        </div>
-
-        </div>
-       
-
-        <div className='w-1/2 flex flex-col items-start' >
-        <h3 className='text-sm  mb-2'>Description</h3>
-        <textarea className='w-full  text-white py-2 px-4 rounded outline-none border-[1px] border-emerald-500 bg-transparent' placeholder='Detailed description of the task'/>
-         <button className=' text-sm bg-emerald-600 hover:bg-emerald-700 py-3 px-5 rounded mt-4 w-full  '>Create Task</button>
-        </div>
-
-            </form>      
-      </div>
+      
     </div>
   );
 };
