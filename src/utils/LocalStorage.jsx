@@ -1,8 +1,15 @@
 const employees = [
   {
     id: 1,
-    email: "employee1@gmail.com",
+    firstName: "Aarav",
+    email: "e@e.com",
     password: "123",
+    taskNumbers: {
+      active: 2,
+      newTask: 1,
+      completed: 1,
+      failed: 0,
+    },
     tasks: [
       {
         active: true,
@@ -12,7 +19,7 @@ const employees = [
         taskTitle: "Design Login Page",
         taskDescription: "Create responsive login UI using React and Tailwind.",
         taskDate: "2026-05-25",
-        category: "Design"
+        category: "Design",
       },
       {
         active: false,
@@ -22,7 +29,7 @@ const employees = [
         taskTitle: "Fix Navbar",
         taskDescription: "Resolve navbar alignment issue on mobile devices.",
         taskDate: "2026-05-20",
-        category: "Development"
+        category: "Development",
       },
       {
         active: true,
@@ -32,15 +39,22 @@ const employees = [
         taskTitle: "API Integration",
         taskDescription: "Connect frontend with authentication API.",
         taskDate: "2026-05-27",
-        category: "Backend"
-      }
-    ]
+        category: "Backend",
+      },
+    ],
   },
 
   {
     id: 2,
+    firstName: "Vivaan",
     email: "employee2@gmail.com",
     password: "123",
+    taskNumbers: {
+      active: 1,
+      newTask: 1,
+      completed: 1,
+      failed: 1,
+    },
     tasks: [
       {
         active: true,
@@ -50,7 +64,7 @@ const employees = [
         taskTitle: "Create Dashboard",
         taskDescription: "Develop admin dashboard layout.",
         taskDate: "2026-05-26",
-        category: "Frontend"
+        category: "Frontend",
       },
       {
         active: false,
@@ -60,7 +74,7 @@ const employees = [
         taskTitle: "Bug Testing",
         taskDescription: "Test application for UI bugs.",
         taskDate: "2026-05-18",
-        category: "Testing"
+        category: "Testing",
       },
       {
         active: false,
@@ -70,15 +84,22 @@ const employees = [
         taskTitle: "Deploy Website",
         taskDescription: "Deploy project on Vercel.",
         taskDate: "2026-05-22",
-        category: "Deployment"
-      }
-    ]
+        category: "Deployment",
+      },
+    ],
   },
 
   {
     id: 3,
+    firstName: "Aditya",
     email: "employee3@gmail.com",
     password: "123",
+    taskNumbers: {
+      active: 2,
+      newTask: 1,
+      completed: 1,
+      failed: 0,
+    },
     tasks: [
       {
         active: true,
@@ -88,7 +109,7 @@ const employees = [
         taskTitle: "Database Setup",
         taskDescription: "Configure MongoDB database.",
         taskDate: "2026-05-29",
-        category: "Database"
+        category: "Database",
       },
       {
         active: false,
@@ -98,7 +119,7 @@ const employees = [
         taskTitle: "Code Refactoring",
         taskDescription: "Optimize React components.",
         taskDate: "2026-05-17",
-        category: "Development"
+        category: "Development",
       },
       {
         active: true,
@@ -108,15 +129,22 @@ const employees = [
         taskTitle: "Create Forms",
         taskDescription: "Build reusable form components.",
         taskDate: "2026-05-30",
-        category: "Frontend"
-      }
-    ]
+        category: "Frontend",
+      },
+    ],
   },
 
   {
     id: 4,
+    firstName: "Swati",
     email: "employee4@gmail.com",
     password: "123",
+    taskNumbers: {
+      active: 1,
+      newTask: 1,
+      completed: 1,
+      failed: 1,
+    },
     tasks: [
       {
         active: true,
@@ -126,7 +154,7 @@ const employees = [
         taskTitle: "Authentication System",
         taskDescription: "Implement JWT authentication.",
         taskDate: "2026-05-28",
-        category: "Security"
+        category: "Security",
       },
       {
         active: false,
@@ -136,7 +164,7 @@ const employees = [
         taskTitle: "Landing Page",
         taskDescription: "Create landing page hero section.",
         taskDate: "2026-05-15",
-        category: "Design"
+        category: "Design",
       },
       {
         active: false,
@@ -146,15 +174,22 @@ const employees = [
         taskTitle: "Payment Gateway",
         taskDescription: "Integrate Stripe payment gateway.",
         taskDate: "2026-05-19",
-        category: "Payment"
-      }
-    ]
+        category: "Payment",
+      },
+    ],
   },
 
   {
     id: 5,
+    firstName: "Arjun",
     email: "employee5@gmail.com",
     password: "123",
+    taskNumbers: {
+      active: 2,
+      newTask: 1,
+      completed: 1,
+      failed: 0,
+    },
     tasks: [
       {
         active: true,
@@ -164,7 +199,7 @@ const employees = [
         taskTitle: "Profile Page",
         taskDescription: "Develop user profile section.",
         taskDate: "2026-05-31",
-        category: "Frontend"
+        category: "Frontend",
       },
       {
         active: false,
@@ -174,7 +209,7 @@ const employees = [
         taskTitle: "SEO Optimization",
         taskDescription: "Improve website SEO performance.",
         taskDate: "2026-05-14",
-        category: "Marketing"
+        category: "Marketing",
       },
       {
         active: true,
@@ -184,20 +219,20 @@ const employees = [
         taskTitle: "Dark Mode",
         taskDescription: "Add dark/light theme toggle.",
         taskDate: "2026-06-01",
-        category: "UI/UX"
-      }
-    ]
-  }
+        category: "UI/UX",
+      },
+    ],
+  },
 ];
 
 const admin = [
   {
     id: 1,
+    firstName: "Rajesh",
     email: "admin@gmail.com",
-    password: "123"
-  }
+    password: "123",
+  },
 ];
-
 
 export const setLocalStorage=()=>{
   localStorage.setItem('employees',JSON.stringify(employees)) 
@@ -208,6 +243,6 @@ export const getLocalStorage=()=>{
   const employees =JSON.parse(localStorage.getItem('employees'))
    const admin =JSON.parse(localStorage.getItem('admin'))
 
-  console.log(employees,admin)
+  return{employees,admin}
   
 }
