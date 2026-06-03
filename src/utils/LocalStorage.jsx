@@ -1,7 +1,7 @@
 const employees = [
   {
     id: 1,
-    firstName: "Aarav",
+    firstName: "Pratham",
     email: "e@e.com",
     password: "123",
     taskNumbers: {
@@ -46,7 +46,7 @@ const employees = [
 
   {
     id: 2,
-    firstName: "Vivaan",
+    firstName: "Shrashti",
     email: "employee2@gmail.com",
     password: "123",
     taskNumbers: {
@@ -91,7 +91,7 @@ const employees = [
 
   {
     id: 3,
-    firstName: "Aditya",
+    firstName: "Samridhi",
     email: "employee3@gmail.com",
     password: "123",
     taskNumbers: {
