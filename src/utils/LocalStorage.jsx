@@ -51,7 +51,7 @@ const employees = [
     password: "123",
     taskNumbers: {
       active: 1,
-      newTask: 1,
+      newTask: 2,
       completed: 1,
       failed: 1,
     },
@@ -91,7 +91,7 @@ const employees = [
 
   {
     id: 3,
-    firstName: "Samridhi",
+    firstName: "Samyyy",
     email: "employee3@gmail.com",
     password: "123",
     taskNumbers: {
@@ -186,7 +186,7 @@ const employees = [
     password: "123",
     taskNumbers: {
       active: 2,
-      newTask: 1,
+      newTask: 0,
       completed: 1,
       failed: 0,
     },
@@ -228,8 +228,8 @@ const employees = [
 const admin = [
   {
     id: 1,
-    firstName: "Rajesh",
-    email: "admin@gmail.com",
+    firstName: "Pratham",
+    email: "agrawalpratham2706@gmail.com",
     password: "123",
   },
 ];
